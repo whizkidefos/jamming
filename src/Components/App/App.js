@@ -11,7 +11,12 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            searchResults: ["name", "artist", "album"]
+            searchResults: [
+                { name: 'What I have Done', artist: 'Linkin Park', album: 'Meteora' 
+            },
+                { name: 'Hello there', artist: 'John Legermen', album: 'Another' 
+            }
+            ]
         }
     }
     render() {
