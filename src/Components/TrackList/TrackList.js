@@ -5,11 +5,11 @@ import SearchResults from '../SearchResults/SearchResults';
 import './TrackList.css';
 
 class TrackList extends React.Component {
-    render(track) {
+    render() {
         return(
             <div className="TrackList">
                 {this.props.tracks.map(track => {
-                    return <Track track={track} key={track.id} />
+                    //return <Track track={track} key={track.id} />
                 })}
             </div>
         );
