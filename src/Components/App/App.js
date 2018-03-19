@@ -26,7 +26,12 @@ class App extends React.Component {
         }
     }
 
-    addTrack(track) {}
+    addTrack(track) {
+        let tracks = this.state.playlistTracks;
+        if(track.id === track.id.length()) {}
+    }
+
+    addTrack = this.addTrack.bind(this);
 
     render() {
         return(
@@ -35,7 +40,7 @@ class App extends React.Component {
             <div className="App">
                 <SearchBar />
                 <div className="App-playlist">
-                <SearchResults searchResults={this.state.searchResults} />
+                <SearchResults searchResults={this.state.searchResults} onAdd={addTrack} />
                 <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
                 <Track track={this.props.track} key={track.id}/>
                 </div>
